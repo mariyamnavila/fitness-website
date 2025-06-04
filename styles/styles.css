@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import url('https://fonts.cdnfonts.com/css/miama');
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+/* shared styles */
+body{
+    background: black;
+}
+.display-flex{
+    display: flex;
+}
+.fitness{
+    color: rgb(230, 83, 60);
+    font-weight: 800;
+    font-size: 2.25rem;
+}
+.title{
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    font-size: 3rem;
+}
+.description{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.8rem ;
+    font-weight: 400;
+}
+.btn-primary{
+    border-radius: 42px;
+    background: rgb(230, 83, 60);
+    padding: 16px 40px;
+    font-weight: 600;
+    font-size: 1.125rem;
+    color: white;
+    
+}
+.btn-secondary{
+    background-color: black;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 42px;
+    padding: 16px 40px ;
+    font-weight: 600;
+    font-size: 1.125rem;
+    color: white;
+}
+/* navbar related styles */
+
+.header{
+    background: linear-gradient(180deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
+    
+}
+
+.btn-first{
+    border-radius: 46px;
+    background: rgb(230, 83, 60);
+    padding: 8px 20px;
+    font-weight: 600;
+    font-size: 1.125rem;
+    color: white;
+}
+a{  
+    color: white;
+    text-decoration: none;
+    padding: 12px  47px;
+}
+ 
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1440px ;
+    margin: 0 auto;
+}
+.nav-item{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 40px;
+    align-items: center;
+    margin: 0 ;
+}
+
+/* banner related styles */
+.banner{
+    justify-content: space-between;
+    /* align-items: center; */
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.ball{
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    border-radius: 50%;
+   
+}
+
+#shape{
+    font-family: 'Miama', sans-serif;
+    font-size: 4.8rem ;
+    font-weight: 900;
+    line-height: 120%;
+}
+/* .banner-1{
+    width: 600px;
+} */
+.banner-2 img{
+    width: 350px;
+    height: 580px;
+}
+.banner-title{
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    font-size: 4.875rem;
+    
+}
+.banner-description{
+    font-weight: 400;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.5);
+    width: 520px;
+}
+.btn-blur{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.1);
+    padding: 24px 20px;
+
+    
+}
+#btn-1{
+    margin-top:  -500px;
+    margin-left: 230px;
+    flex-direction: column;
+    text-align: left;
+}
+#btn-2{
+    margin-top: 200px;
+    margin-left: -70px;
+    text-align: left;
+}
+#five{
+    font-size: 2.5rem;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+}
+#three{
+    font-size: 1.5rem;
+    color: rgb(250, 250, 249);
+    font-weight: 900;
+}
+#free{
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 0.8rem;
+}
+#video{
+    color: rgba(239, 237, 232, 0.65);
+    font-weight: 400;
+    font-size: 1rem ;
+}
+
+/* habit section related styles */
+
+.habits{
+    align-items: center;
+    text-align: center;
+    max-width: 1440px;
+    margin: 100px auto;
+}
+.habit-cards{
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 58px auto;
+}
+.habit-card{
+    width: 230px;
+    margin: 0 40px;
+}
+.habit-cards img{
+    border-radius: 50%;
+    border: 3px solid rgba(255, 255, 255, 0.1);
+}
+
+.card-title{
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 1.125rem ;
+    
+}
+
+@media screen and (max-width:576px) {
+    .banner,
+    .habits,
+    .habit-cards {
+        flex-direction: column;
+    }
+    .habits{
+        margin: 160px auto;
+    }
+    .banner-title, #shape{
+        font-size: 2.25rem;
+    }
+    .banner-description{
+        width: 274px;
+    }
+    #btn-1{
+    margin-top:  -500px;
+    margin-left: 230px;
+    }
+    #btn-2{
+    margin-top: 100px;
+    margin-left: 10px;
+    }
+    /* .banner-1{
+        width: 352px;
+    } */
+    .nav-item{
+        display: none;
+    }
+}
