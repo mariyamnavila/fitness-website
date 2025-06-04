@@ -37,6 +37,7 @@ body{
     font-weight: 600;
     font-size: 1.125rem;
     color: white;
+    margin-top: 30px;
     
 }
 .btn-secondary{
@@ -192,11 +193,40 @@ a{
     
 }
 
+/* run section related styles */
+
+.run{
+    justify-content: space-between;
+    border-radius: 18px;
+    background:  rgb(34, 34, 34);
+    max-width: 1440px;
+    margin: 100px auto;
+}
+.run-div{
+    padding: 40px 50px;
+    width: 445px;
+}
+
+.run-img  img{
+    border-radius: 18px;
+    margin: 30px;
+    width:calc(100% - 60px);
+    height: 312px;
+    overflow: hidden;
+}
+
 @media screen and (max-width:576px) {
     .banner,
     .habits,
-    .habit-cards {
+    .habit-cards,
+    .run {
         flex-direction: column;
+    }
+    .run-div{
+        width: auto;
+    }
+    .run-img img{
+        width: calc(100% - 60px);
     }
     .habits{
         margin: 160px auto;
