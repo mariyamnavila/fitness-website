@@ -226,12 +226,81 @@ a{
     max-width: 1440px;
     margin: 100px auto;
 }
-
 .calculator{
+    background: rgb(34, 34, 34);
+}
 
+.bmi{
+    justify-content: space-between;
+    max-width: 1440px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.title2{
+    color: rgb(255, 255, 255);
+    font-size: 1.75rem;
+    font-weight: 900;
+}
+
+table{
+    border-collapse: collapse;
+}
+td,th{
+    border: 1px solid rgba(255, 255, 255, 0.1) ;
+    padding: 14px 20px;
+    text-align: left;
+}
+
+th{
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+td{
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 400;
+    font-size: 0.8rem ;
+}
+.form{
+    margin: 50px;
+}
+
+.grid1 {
+    display: grid;
+    grid-template-columns: repeat(2,1fr) ;
+    gap: 12px;
+}
+#box5{
+    grid-column: span 2;
+}
+
+
+.grid1 input{
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 12px 40px 12px 20px;
+    border: none;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 1rem;
 }
 
 /* team section related styles */
+
+.team{
+    text-align: center;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.grid2{
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.1);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
 
 /* footer section related styles */
 
@@ -239,7 +308,8 @@ a{
     .banner,
     .habits,
     .habit-cards,
-    .run {
+    .run,
+    .bmi {
         flex-direction: column;
     }
     .run-div{
@@ -270,5 +340,8 @@ a{
     } */
     .nav-item{
         display: none;
+    }
+    .grid1 input{
+        width: calc(100% - 30px);
     }
 }
