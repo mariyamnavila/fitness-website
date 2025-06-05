@@ -210,15 +210,19 @@ a{
 .run-img  img{
     border-radius: 18px;
     margin: 30px;
-    width:calc(100% - 60px);
+    /* width:calc(100% - 60px); */
+    width: 336px;
     height: 312px;
-    overflow: hidden;
+    object-fit: cover;
+    /* object-position: 10% 100%; */
 }
 
-#run{
+/* #run{
+    width: 366px;
+    height: 312px;
     object-fit: cover;
-    object-position: top right;
-}
+    object-position: 100% 100%;
+} */
 
 /* calculator section related styles */
 .calc{
@@ -299,10 +303,58 @@ td{
     background: rgba(255, 255, 255, 0.1);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    margin-top: 60px;
+    margin-bottom: 90px;
+}
+.grid2 img{
+    border-radius: 18px;
+    background: rgba(0, 0, 0, 0.2);
+    width: 326px;
+    height: 270px;
+    object-fit: cover;
+    margin: 20px;
+}
+
+.position{
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 400;
+    font-size: 0.8rem ;
+}
+.bottom-left{
+    position: absolute;
+    text-align: left;
+    bottom: 100px;
+    left: 20px;
+}
+.name{
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    font-size: 1.25rem;
 }
 
 
 /* footer section related styles */
+
+footer{
+    background: rgb(34, 34, 34);
+}
+
+.fitness2{
+    color: rgb(230, 83, 60);
+    font-weight: 800;
+    font-size: 4.3rem;
+}
+
+.title3{
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    font-size: 2rem;
+}
+.title4{
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 400;
+    font-size: 1.4rem;
+}
 
 @media screen and (max-width:576px) {
     .banner,
