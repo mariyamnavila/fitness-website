@@ -208,6 +208,8 @@ a{
 .run-div{
     padding: 40px 50px;
     width: 445px;
+    height: 290px;
+    margin-top: 0;
 }
 
 .run-img  img{
@@ -220,12 +222,12 @@ a{
     /* object-position: 10% 100%; */
 }
 
-/* #run{
+#run{
     width: 366px;
     height: 312px;
-    object-fit: cover;
-    object-position: 100% 100%;
-} */
+    object-fit:none;
+    object-position: 67% 30%;
+}
 
 /* calculator section related styles */
 .calc{
@@ -286,7 +288,7 @@ td{
 .grid1 input{
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.1);
-    padding: 12px 40px 12px 20px;
+    padding: 12px 15px 12px 15px;
     border: none;
     color: rgba(255, 255, 255, 0.6);
     font-size: 1rem;
@@ -364,8 +366,8 @@ td{
 }
 .card1{
     border-radius: 20px;
-    box-shadow: 0 0 15px 5px rgb(153, 255, 153);
-    border: 1px solid rgb(153, 255, 153);
+    box-shadow: 0 0 15px 5px rgb(230, 83, 60);
+    border: 1px solid rgb(230, 83, 60);
 }
 .card2{
     border-radius: 20px;
@@ -374,8 +376,8 @@ td{
 }
 .card3{
     border-radius: 20px;
-    box-shadow: 0 0 15px 5px rgb(51, 102, 255) ;
-    border: 1px solid rgb(51, 102, 255);
+    box-shadow: 0 0 15px 5px  rgb(230, 83, 60) ;
+    border: 1px solid  rgb(230, 83, 60);
 }
 .img-box img{
     border-radius: 20px ;
@@ -430,8 +432,16 @@ footer{
     .habits,
     .habit-cards,
     .run,
-    .bmi {
+    .bmi,
+    .cards,
+    .footer1 {
         flex-direction: column;
+    }
+    .title{
+        font-size: 2rem;
+    }
+    .headline{
+        width: 318px;
     }
     .nav-item{
         display: none;
@@ -443,7 +453,7 @@ footer{
         width: calc(100% - 60px);
     }
     .habits{
-        margin: 160px auto;
+        margin: 220px auto 100px auto;
     }
     .banner-title, #shape{
         font-size: 2.25rem;
@@ -452,7 +462,7 @@ footer{
         width: 274px;
     }
     #btn-1{
-    margin-top:  -500px;
+    margin-top:  -550px;
     margin-left: 230px;
     }
     #btn-2{
@@ -466,4 +476,23 @@ footer{
     .grid1 input{
         width: calc(100% - 30px);
     }
+    .grid2{
+        grid-template-columns: repeat(1 ,1fr);
+        width: 353px;
+    }
+    .cards{
+        align-items: center;
+    }
+    .card{
+        margin: 20px;
+    }
+    .calc,
+    .footer1,
+    .footer2{
+        max-width: 353px;
+    }
+    .footerno1{
+        width: 317px;
+    }
+
 }
