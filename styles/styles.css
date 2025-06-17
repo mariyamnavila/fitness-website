@@ -20,6 +20,10 @@ body{
     font-weight: 800;
     font-size: 2.25rem;
 }
+.headline{
+    width: 590px;
+    margin: 0 auto;
+}
 .title{
     color: rgb(255, 255, 255);
     font-weight: 900;
@@ -29,6 +33,7 @@ body{
     color: rgba(255, 255, 255, 0.5);
     font-size: 0.8rem ;
     font-weight: 400;
+    line-height: 24px;
 }
 .btn-primary{
     border-radius: 42px;
@@ -48,6 +53,7 @@ body{
     font-weight: 600;
     font-size: 1.125rem;
     color: white;
+    margin-top: 30px;
 }
 /* navbar related styles */
 
@@ -73,7 +79,7 @@ a{
 .navbar{
     justify-content: space-between;
     align-items: center;
-    max-width: 1440px ;
+    max-width: 1060px ;
     margin: 0 auto;
 }
 .nav-item{
@@ -87,7 +93,7 @@ a{
 .banner{
     justify-content: space-between;
     /* align-items: center; */
-    max-width: 1440px;
+    max-width: 1060px;
     margin: 0 auto;
 }
 .ball{
@@ -169,21 +175,18 @@ a{
 .habits{
     align-items: center;
     text-align: center;
-    max-width: 1440px;
+    max-width: 1044px;
     margin: 100px auto;
 }
 .habit-cards{
-    justify-content: space-evenly;
-    align-items: center;
     margin: 58px auto;
 }
 .habit-card{
-    width: 230px;
     margin: 0 40px;
 }
 .habit-cards img{
     border-radius: 50%;
-    border: 3px solid rgba(255, 255, 255, 0.1);
+    border: 4px solid rgba(255, 255, 255, 0.1);
 }
 
 .card-title{
@@ -199,7 +202,7 @@ a{
     justify-content: space-between;
     border-radius: 18px;
     background:  rgb(34, 34, 34);
-    max-width: 1440px;
+    max-width: 1060px;
     margin: 100px auto;
 }
 .run-div{
@@ -227,7 +230,7 @@ a{
 /* calculator section related styles */
 .calc{
     text-align: center;
-    max-width: 1440px;
+    max-width: 1060px;
     margin: 100px auto;
 }
 .calculator{
@@ -236,9 +239,8 @@ a{
 
 .bmi{
     justify-content: space-between;
-    max-width: 1440px;
+    max-width: 1060px;
     margin: 0 auto;
-    align-items: center;
 }
 
 .title2{
@@ -268,7 +270,7 @@ td{
     font-size: 0.8rem ;
 }
 .form{
-    margin: 50px;
+    margin-bottom:50px ;
 }
 
 .grid1 {
@@ -294,7 +296,7 @@ td{
 
 .team{
     text-align: center;
-    max-width: 1440px;
+    max-width: 1060px;
     margin: 0 auto;
 }
 
@@ -303,33 +305,41 @@ td{
     background: rgba(255, 255, 255, 0.1);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin-top: 60px;
-    margin-bottom: 90px;
+    width: 1025px;
+    margin: 58px auto 88px auto;
+    gap: 20px;
+    padding: 20px;
 }
 .grid2 img{
     border-radius: 18px;
     background: rgba(0, 0, 0, 0.2);
     width: 326px;
-    height: 270px;
+    height: 272px;
     object-fit: cover;
-    margin: 20px;
+}
+
+
+.container{
+    position: relative;
+}
+.grid2 .bottom-left{
+    position: absolute;
+    text-align: left;
+    bottom: 15px;
+    left: 19px;
+}
+.name{
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    font-size: 1.25rem;
+    margin: 0;
 }
 
 .position{
     color: rgba(255, 255, 255, 0.5);
     font-weight: 400;
     font-size: 0.8rem ;
-}
-.bottom-left{
-    position: absolute;
-    text-align: left;
-    bottom: 100px;
-    left: 20px;
-}
-.name{
-    color: rgb(255, 255, 255);
-    font-weight: 900;
-    font-size: 1.25rem;
+    margin: 0 ;
 }
 
 
@@ -338,11 +348,29 @@ td{
 footer{
     background: rgb(34, 34, 34);
 }
+.footer1{
+    justify-content: space-between;
+    max-width: 1060px;
+    margin: 0 auto;
+
+}
+.footer2{
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
+    max-width: 1060px;
+    margin: 0 auto;
+    text-align: center;
+    color: rgb(255, 255, 255, 0.5);
+    padding: 5px;
+}
 
 .fitness2{
     color: rgb(230, 83, 60);
     font-weight: 800;
     font-size: 4.3rem;
+}
+
+.footerno1{
+    width: 443px;
 }
 
 .title3{
@@ -363,6 +391,9 @@ footer{
     .run,
     .bmi {
         flex-direction: column;
+    }
+    .nav-item{
+        display: none;
     }
     .run-div{
         width: auto;
@@ -390,9 +421,7 @@ footer{
     /* .banner-1{
         width: 352px;
     } */
-    .nav-item{
-        display: none;
-    }
+
     .grid1 input{
         width: calc(100% - 30px);
     }
