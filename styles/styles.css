@@ -577,6 +577,14 @@ footer{
         display: block;
         margin: 0 auto;
     }
+    #btn-1{
+    margin-top:  -540px;
+    margin-left: 400px;
+    }
+    #btn-2{
+    margin-top: 200px;
+    margin-left: 140px;
+    }
     .grid0{
         display: grid;
         grid-template-columns: repeat(2 , 1fr);
