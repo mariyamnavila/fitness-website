@@ -451,9 +451,7 @@ footer{
 .footerno1{
     width: 443px;
 }
-/* .footerno2{
-    justify-content: space-evenly;
-} */
+
 .title3{
     color: rgb(255, 255, 255);
     font-weight: 700;
@@ -511,10 +509,7 @@ footer{
     margin-top: 100px;
     margin-left: 10px;
     }
-    /* .banner-1{
-        width: 352px;
-    } */
-
+    
     #run{
         width:287px ;
         height: 170px;
