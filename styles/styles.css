@@ -28,6 +28,8 @@ body{
     color: rgb(255, 255, 255);
     font-weight: 900;
     font-size: 3rem;
+    margin-top: 0;
+    margin-bottom: 14px;
 }
 .description{
     color: rgba(255, 255, 255, 0.5);
@@ -73,7 +75,7 @@ body{
 a{  
     color: white;
     text-decoration: none;
-    padding: 12px  47px;
+    padding: 12px  20px;
 }
  
 .navbar{
@@ -81,6 +83,9 @@ a{
     align-items: center;
     max-width: 1060px ;
     margin: 0 auto;
+}
+.icon{
+    display: none;
 }
 .nav-item{
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -99,9 +104,17 @@ a{
 .ball{
     width: 40px;
     height: 40px;
-    background-color: red;
+    background-color: rgb(230, 83, 60);
     border-radius: 50%;
+    margin: 8px;
    
+}
+
+.ball i{
+    position: absolute;
+    color: rgb(255, 255, 255);
+    left: 17px;
+    top: 13px;
 }
 
 #shape{
@@ -129,24 +142,31 @@ a{
     color: rgba(255, 255, 255, 0.5);
     width: 520px;
 }
-.btn-blur{
+.btn-blur1{
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
     backdrop-filter: blur(20px);
     background: rgba(255, 255, 255, 0.1);
     padding: 24px 20px;
-
-    
+    width: 193px;
+}
+.btn-blur2{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    padding: 24px 20px;
+    background: rgba(48, 48, 48, 0.54);
+    width: 206px;
 }
 #btn-1{
     margin-top:  -500px;
-    margin-left: 230px;
+    margin-left: 210px;
     flex-direction: column;
     text-align: left;
 }
 #btn-2{
     margin-top: 200px;
-    margin-left: -70px;
+    margin-left: -115px;
     text-align: left;
 }
 #five{
@@ -154,10 +174,12 @@ a{
     color: rgb(255, 255, 255);
     font-weight: 900;
 }
+
 #three{
     font-size: 1.5rem;
     color: rgb(250, 250, 249);
     font-weight: 900;
+
 }
 #free{
     font-weight: 400;
@@ -209,17 +231,13 @@ a{
     padding: 40px 50px;
     width: 445px;
     height: 290px;
-    margin-top: 0;
 }
 
 .run-img  img{
     border-radius: 18px;
     margin: 30px;
-    /* width:calc(100% - 60px); */
     width: 336px;
     height: 312px;
-    object-fit: cover;
-    /* object-position: 10% 100%; */
 }
 
 #run{
@@ -293,13 +311,42 @@ td{
     color: rgba(255, 255, 255, 0.6);
     font-size: 1rem;
 }
+.grid1 #fa1{
+    position: absolute;
+    left: 620px;
+    top: 67px;
+}
+.grid1 #fa2{
+    position: absolute;
+    left: 620px;
+    top: 123px;
+}
+.grid1 i{
+    color: rgb(255, 255, 255, 0.6);
+}
+
+/* exercise section related styles */
+
+/* .img-1{
+    background-color: rgba(6, 255, 210, 0.5);
+    
+}
+#ing{
+        width: 323px;
+        background-color: rgba(6, 255, 210, 0.5);
+    height: 218px;
+}
+.overlay{
+    background-color: rgba(6, 255, 210, 0.5);
+} */
+
 
 /* team section related styles */
 
 .team{
     text-align: center;
     max-width: 1060px;
-    margin: 0 auto;
+    margin: 100px auto;
 }
 
 .grid2{
@@ -355,7 +402,6 @@ td{
     color: rgb(255, 255, 255);
     font-weight: 900;
     font-size: 3rem;
-    text-shadow: 0 0 20px rgb(255, 255, 255);
 }
 .cards{
     justify-content: space-evenly;
@@ -363,24 +409,12 @@ td{
 .card{
     width: 300px;
     height: 420px;
+    border-radius: 18px;
+    border: 2px solid rgb(230, 83, 60);
 }
-.card1{
-    border-radius: 20px;
-    box-shadow: 0 0 15px 5px rgb(230, 83, 60);
-    border: 1px solid rgb(230, 83, 60);
-}
-.card2{
-    border-radius: 20px;
-    box-shadow: 0 0 15px 5px rgb(230, 83, 60) ;
-    border: 1px solid rgb(230, 83, 60);
-}
-.card3{
-    border-radius: 20px;
-    box-shadow: 0 0 15px 5px  rgb(230, 83, 60) ;
-    border: 1px solid  rgb(230, 83, 60);
-}
+
 .img-box img{
-    border-radius: 20px ;
+    border-radius: 18px ;
     width: 280px;
     height: 200px;
     margin: 10px;
@@ -404,7 +438,9 @@ footer{
     color: rgb(255, 255, 255, 0.5);
     padding: 5px;
 }
-
+.foot{
+    margin: 0 100px 0 0;
+}
 .fitness2{
     color: rgb(230, 83, 60);
     font-weight: 800;
@@ -415,7 +451,9 @@ footer{
 .footerno1{
     width: 443px;
 }
-
+/* .footerno2{
+    justify-content: space-evenly;
+} */
 .title3{
     color: rgb(255, 255, 255);
     font-weight: 700;
@@ -434,7 +472,8 @@ footer{
     .run,
     .bmi,
     .cards,
-    .footer1 {
+    .footer1,
+    .footerno2 {
         flex-direction: column;
     }
     .title{
@@ -445,6 +484,9 @@ footer{
     }
     .nav-item{
         display: none;
+    }
+    .icon{
+        display: block;
     }
     .run-div{
         width: auto;
@@ -473,12 +515,30 @@ footer{
         width: 352px;
     } */
 
+    #run{
+        width:287px ;
+        height: 170px;
+        object-fit: cover;
+        margin: 20px auto;
+        display: block;
+    }
     .grid1 input{
         width: calc(100% - 30px);
     }
     .grid2{
         grid-template-columns: repeat(1 ,1fr);
         width: 353px;
+    }
+
+    .grid1 #fa1{
+    position: absolute;
+    left: 380px;
+    top: 67px;
+    }
+    .grid1 #fa2{
+    position: absolute;
+    left: 380px;
+    top: 123px;
     }
     .cards{
         align-items: center;
@@ -495,4 +555,58 @@ footer{
         width: 317px;
     }
 
+}
+
+@media screen and (min-width:576px) and (max-width:992px) {
+    .banner,
+    .bmi,
+    .footer1 
+     {
+        flex-direction: column;
+    }
+    .banner-1{
+        margin: 0 72px 75px 72px;
+    }
+    .bmi{
+        margin: 30px;
+    }
+
+    .banner-2 img{
+        align-items: center;
+        justify-content: center;
+        display: block;
+        margin: 0 auto;
+    }
+    .grid0{
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+    }
+    .run-title{
+        font-size: 2.25rem;
+    }
+    #run{
+        width: 256px;
+        height: 319px;
+    }
+    .grid2{
+        width: 677px;
+    }
+    .grid2 img{
+        width: 200px;
+    }
+    .grid1 #fa1{
+    left: 655px;
+    }
+    .grid1 #fa2{
+    left: 655px;
+    }
+    .cards img{
+        width: 210px;
+    }
+    .card{
+        width: 230px;
+    }
+    .footer1{
+        margin: 66px 30px;
+    }
 }

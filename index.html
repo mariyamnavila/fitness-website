@@ -11,6 +11,9 @@
     <header class="header">
         <nav class="navbar display-flex">
             <h4 class="fitness"><i>Fitness</i></h4>
+            <div class="icon">
+                <a href=""><i class="fa-solid fa-bars"></i></a>
+            </div>
             <div class="nav-item display-flex">
                 <button class="btn-first"><a href="">Home</a></button>
                 <a href="">Service</a>
@@ -29,17 +32,16 @@
             </div>
             <div class="banner-2">
                 <img src="images/Images 2.png" alt="">
-                <button id="btn-1" class="btn-blur display-flex">
+                <button id="btn-1" class="btn-blur1 display-flex">
                     <span id="five">500+</span>
-                    <br>
                     <span id="free">Free Workout Videos</span>
                 </button>
-                <button id="btn-2" class="btn-blur display-flex">
-                    <div class="ball"></div>
-                    <div>
+                <button id="btn-2" class="btn-blur2 display-flex">
+                    <div class="ball container"><i class="fa-sharp fa-solid fa-play"></i></div>
+                    <div class="vid">
                         <span id="three">350+</span>
-                    <br>
-                    <span id="video">Video tutorial</span>
+                        <br>
+                        <span id="video">Video tutorial</span>
                     </div>
                 </button>
             </div>
@@ -50,7 +52,7 @@
             <h3 class="title">Change Your Habits</h3>
             <p class="description">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
         </div>
-        <div class="habit-cards display-flex">
+        <div class="habit-cards display-flex grid0">
             <div class="habit-card">
                 <img src="images/image 3.png" alt="">
                 <h5 class="card-title">Movement</h5>
@@ -75,7 +77,7 @@
     </section>
     <section class="run display-flex">
         <div class="run-div">
-            <h3 class="title">Run an Extra <br>Mile Easily</h3>
+            <h3 class="title run-title">Run an Extra <br>Mile Easily</h3>
             <p class="description">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. With hundreds of professional workouts.</p>
             <button class="btn-primary">Join Now</button>
         </div>
@@ -83,6 +85,40 @@
             <img id="run" src="images/run.jpg" alt="">
         </div>
     </section>
+    <!-- <section class="exercise">
+    
+        <div class="headline">
+            <h4 class="title">Trainings and Exercises</h4>
+            <p class="description">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
+        </div>
+        <div>
+            <div class="container">
+                <div class="img-1"><img id="ing" src="images/exercise1.jpg" alt=""><div class="overlay"></div></div>
+                <p class="text1">Exercise</p>
+            </div>
+            <div class="container">
+                <div class="img-2"><img src="images/exercise2.png" alt=""></div>
+                <p class="text2">Planking</p>
+            </div>
+            <div class="container">
+                <div class="img-3"><img src="images/exercise3.png" alt=""></div>
+                <p class="text3">Leg Press: Works the quadriceps and glutes</p>
+            </div>
+            <div class="container">
+                <div class="img-4"><img src="images/exercise4.png" alt=""></div>
+                <p class="text4">Leg Press: Works the quadriceps and glutes</p>
+            </div>
+            <div class="container">
+                <div class="img-5"><img src="images/exercise5.jpg" alt=""></div>
+                <p class="text5">Leg Press: Works the quadriceps and glutes</p>
+            </div>
+            <div class="container">
+                <div class="img-6"><img src="images/exercise6.jpg" alt=""></div>
+                <p class="text6">Leg Press: Works the quadriceps and glutes</p>
+            </div>
+        </div>
+    </section> -->
+    <!-- calculator section starts -->
     <section class="calc headline" >
         <h3 class="title">BMI Calculator</h3>
         <p class="description">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
@@ -117,17 +153,19 @@
              <div class="form">
                 <h4 class="title2">Calculate your BMI</h4>
                 <p class="description">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. </p>
-                <div class="grid1">
+                <div class="grid1 container">
                     <input type="text" placeholder="Height/cm">
                     <input type="text" placeholder="Weight/kg">
-                    <input type="text" placeholder="Age"  >
-                    <input type="text" placeholder="Sex">
+                    <input type="text" placeholder="Age">
+                    <input type="text" placeholder="Sex"><i id="fa1" class="fa-solid fa-chevron-down"></i>
                     <input id="box5" type="text" placeholder="Select an activity factor">
+                    <i id="fa2" class="fa-solid fa-chevron-down"></i>
                 </div>
                 <button class="btn-primary">Calculate</button>
              </div>
         </div>
     </section>
+    <!-- team section starts -->
     <section class="team">
         <div class="headline">
             <h3 class="title">Meet Our Team</h3>
@@ -178,30 +216,27 @@
             </div>
         </div>
     </section>
-    <section>
-
-    </section>
     <!-- unique section starts -->
     <section class="unique">
         <div class="headline">
             <p class="unique-title">Our Projects</p>
         </div>
-        <div class="cards display-flex">
-            <div class="card card1">
+        <div class="cards display-flex ">
+            <div class="card ">
                 <div class="img-box">
                     <img src="images/training.jpg" alt="">
                 </div>
                 <h4 class="title2">Training</h4>
                 <p class="description">Exercises and activities designed to improve physical fitness for sports or other physical activities. </p>
             </div>
-            <div class="card card2">
+            <div class="card ">
                 <div class="img-box">
                     <img src="images/running.jpg" alt="">
                 </div>
                 <h4 class="title2">Running</h4>
                 <p class="description">Running is a great way to improve cardiovascular health, manage weight, and boost mental well-being. </p>
             </div>
-            <div class="card card3">
+            <div class="card ">
                 <div class="img-box">
                     <img src="images/workout.jpg" alt="">
                 </div>
@@ -216,19 +251,21 @@
                 <p class="fitness2"><i>Fitness</i></p>
                 <p class="description">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. With hundreds of professional workouts.</p>
             </div>
-            <div class="footer1.2">
-                <h4 class="title3">Get Started</h4>
-                <p class="title4">Service</p>
-                <p class="title4">Contact Us</p>
-                <p class="title4">Affiliate Program</p>
-                <p class="title4">About Us</p>
-            </div>
-            <div class="footer1.3">
-                <h4 class="title3">Get Started</h4>
-                <p class="title4">Fitness</p>
-                <p class="title4">Platform</p>
-                <p class="title4">Workout Libary</p>
-                <p class="title4">App Design</p>
+            <div class="footerno2 display-flex">
+                <div class="foot">
+                    <h4 class="title3">Get Started</h4>
+                    <p class="title4">Service</p>
+                    <p class="title4">Contact Us</p>
+                    <p class="title4">Affiliate Program</p>
+                    <p class="title4">About Us</p>
+                </div>
+                <div>
+                    <h4 class="title3">Get Started</h4>
+                    <p class="title4">Fitness</p>
+                    <p class="title4">Platform</p>
+                    <p class="title4">Workout Libary</p>
+                    <p class="title4">App Design</p>
+                </div>
             </div>
         </div>
         <div class="footer2">
